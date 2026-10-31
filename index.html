@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="r97PwUPcMpgMH82u6sQ3gjoFwdl2g
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Star Musical Events | Rewa</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Star Musical Events Logo">
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#instruments">Instruments</a>
+      <a href="#singers">Singers</a>
+      <a href="#booking">Booking</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <p class="tagline">MUSIC • EVENTS • ENTERTAINMENT</p>
+
+    <h1>
+      Make Your Events<br>
+      <span>Musical & Memorable</span>
+    </h1>
+
+    <p>
+      Live singers and musical instruments for your special occasions.
+    </p>
+
+    <a href="#booking" class="btn">BOOK YOUR EVENT</a>
+  </section>
+
+  <section class="section" id="instruments">
+    <h2>Our Musical Instruments</h2>
+    <p>Explore instruments available for booking.</p>
+
+    <div class="cards">
+
+      <div class="card">
+        <img class="instrument-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7bGoFaH4CwQqSc8VmNV18oLcw9a9f1fGpF2cxiabOxA&s=10" alt="Tabla">
+        <h3>Tabla</h3>
+        <p>Traditional musical instrument</p>
+        <button type="button" onclick="bookItem('Tabla')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-eZsYpbM6SOKjTDFifntR8p9VaWWTDWCEjsv9H0aLXZL0AqfdE6FwPOQ8&s=10" alt="Organ">
+        <h3>Organ</h3>
+        <p>Musical instrument for events</p>
+        <button type="button" onclick="bookItem('Organ')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://www.brighamlarsonpianos.com/cdn/shop/files/Main_8816e821-36cf-4e1e-b765-4a282b29dc9d.jpg?v=1726266408&width=1445" alt="Piano">
+        <h3>Piano</h3>
+        <p>Beautiful musical sound</p>
+        <button type="button" onclick="bookItem('Piano')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5xPwY3Uez8a8Uu6lM0eTMk7litFgEjCB5QAcJG0yPmOB64zyVZHEHa2uF&s=10" alt="Pad">
+        <h3>Pad</h3>
+        <p>Electronic rhythm instrument</p>
+        <button type="button" onclick="bookItem('Pad')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://musicchamps.com/_next/image?url=%2Fimages%2Fblog%2Fguitar-for-beginners.png&w=3840&q=75" alt="Guitar">
+        <h3>Guitar</h3>
+        <p>For live music performances</p>
+        <button type="button" onclick="bookItem('Guitar')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://earthmoments.com/cdn/shop/articles/sitar_1600x.jpg?v=1568737429" alt="Sitaar">
+        <h3>Sitaar</h3>
+        <p>Classical musical instrument</p>
+        <button type="button" onclick="bookItem('Sitaar')">Book Now</button>
+      </div>
+
+      <div class="card">
+        <img class="instrument-img" src="https://www.calmusical.com/wp-content/uploads/2025/02/portable-ordinary-harmonium-1.webp" alt="Harmonium">
+        <h3>Harmonium</h3>
+        <p>Traditional music instrument</p>
+        <button type="button" onclick="bookItem('Harmonium')">Book Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section singer-section" id="singers">
+
+    <h2>Our Singers</h2>
+
+    <p>
+      Make Every Moment Special with Live Music.
+    </p>
+
+    <div class="cards">
+
+      <div class="card singer-card">
+
+        <div class="singer-image">
+          <img src="sohail.png" alt="Sohail Star Male Singer">
+        </div>
+
+        <h3>Sohail Star</h3>
+
+        <p>Male Singer</p>
+
+        <button type="button" onclick="bookItem('Male Singer - Sohail Star')">
+          Book Singer
+        </button>
+
+      </div>
+
+      <div class="card singer-card">
+
+        <div class="singer-image">
+          <div class="female-placeholder">🎙️</div>
+        </div>
+
+        <h3>Female Singer</h3>
+
+        <p>Available for Booking</p>
+
+        <button type="button" onclick="bookItem('Female Singer')">
+          Book Singer
+        </button>
+
+      </div>
+
+    </div>
+
+    <a
+      class="instagram"
+      href="https://www.instagram.com/singer_sohail_star/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Visit Our Instagram
+    </a>
+
+  </section>
+
+  <section class="section booking-section" id="booking">
+
+    <h2>Book Your Event</h2>
+
+    <p>Fill in your details to enquire about your booking.</p>
+
+    <form id="bookingForm">
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Your Full Name"
+        required
+      >
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Your Mobile Number"
+        required
+      >
+
+      <div class="selection-box">
+
+        <h3>Book Singer / Instruments</h3>
+
+        <p>
+          Select one or more singers or instruments.
+          Click again to remove any selection.
+        </p>
+
+        <div id="selection">
+
+          <label>
+            <input type="checkbox" name="selection" value="Tabla">
+            Tabla
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Organ">
+            Organ
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Piano">
+            Piano
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Pad">
+            Pad
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Guitar">
+            Guitar
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Sitaar">
+            Sitaar
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Harmonium">
+            Harmonium
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Male Singer - Sohail Star">
+            Male Singer - Sohail Star
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Female Singer">
+            Female Singer
+          </label>
+
+          <label>
+            <input type="checkbox" name="selection" value="Male & Female Singer (Duo)">
+            Male & Female Singer (Duo)
+          </label>
+
+        </div>
+
+      </div>
+
+      <select id="eventType" required>
+        <option value="">Select Event</option>
+        <option>Wedding</option>
+        <option>Birthday</option>
+        <option>Anniversary</option>
+        <option>Party</option>
+        <option>Live Music</option>
+        <option>Other</option>
+      </select>
+
+      <!-- Event Date: Only one date field -->
+      <div class="date-field">
+
+        <!-- Customer types date in DD-MM-YYYY format -->
+        <input
+          type="text"
+          id="eventDate"
+          name="eventDate"
+          placeholder="DD-MM-YYYY"
+          maxlength="10"
+          inputmode="numeric"
+          autocomplete="off"
+          required
+        >
+
+        <!-- Calendar button -->
+        <button
+          type="button"
+          id="datePickerButton"
+          aria-label="Choose event date"
+        >
+          📅
+        </button>
+
+        <!-- Hidden calendar input used by the calendar button -->
+        <input
+          type="date"
+          id="hiddenDatePicker"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+
+      </div>
+
+      <input
+        type="text"
+        id="location"
+        placeholder="Event Location"
+        required
+      >
+
+      <textarea
+        id="message"
+        placeholder="Additional Details"
+      ></textarea>
+
+      <button type="submit">
+        Send Booking Enquiry on WhatsApp
+      </button>
+
+    </form>
+
+  </section>
+
+  <footer>
+
+    <h3>STAR MUSICAL EVENTS</h3>
+
+    <p>Serving Rewa, Amarpatan, Satna & Maihar</p>
+
+    <a href="https://wa.me/917225918295">
+      Contact on WhatsApp
+    </a>
+
+    <p>© 2026 Star Musical Events</p>
+
+  </footer>
+
+  <script src="script.js"></script>
+<style>
+  [data-netlify-badge],
+  .netlify-badge,
+  a[href*="netlify.com"] {
+    display: none !important;
+  }
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[href*="netlify.com"], [data-netlify-badge]')
+  .forEach(function(el) {
+    el.style.display = "none";
+  });
+});
+</script>
+<style>
+#netlify-badge,
+.netlify-badge,
+[data-netlify-badge] {
+    display: none !important;
+}
+</style>
+</body>
+</html>
