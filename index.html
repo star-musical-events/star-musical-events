@@ -2,17 +2,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="r97PwUPcMpgMH82u6sQ3gjoFwdl2g
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Star Musical Events | Rewa</title>
+  <!-- GOOGLE SEO -->
+  <title>Sohail Star | Star Musical Events Rewa</title>
+
+  <meta name="description" content="Book Sohail Star, live singer in Rewa Madhya Pradesh. Star Musical Events provides live singers and musical instruments for weddings, birthdays, parties and special events in Rewa, Satna, Maihar and Amarpatan.">
+
+  <meta name="keywords" content="Sohail Star, Sohail Star Rewa, Star Musical Events, Singer in Rewa, Live Singer Rewa, Sohail Mansuri, Wedding Singer Rewa, Live Music Rewa">
+
+  <meta name="author" content="Star Musical Events">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- SOCIAL MEDIA SEO -->
+  <meta property="og:title" content="Sohail Star | Star Musical Events Rewa">
+  <meta property="og:description" content="Book Sohail Star for live singing and musical entertainment in Rewa and nearby cities.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="sohail.png">
 
   <link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header>
     <div class="logo">
       <img src="logo.png" alt="Star Musical Events Logo">
@@ -26,7 +43,9 @@
     </nav>
   </header>
 
+  <!-- HOME -->
   <section class="hero" id="home">
+
     <p class="tagline">MUSIC • EVENTS • ENTERTAINMENT</p>
 
     <h1>
@@ -35,14 +54,18 @@
     </h1>
 
     <p>
-      Live singers and musical instruments for your special occasions.
+      Book Sohail Star for live singing, weddings, birthdays and special events in Rewa, Satna, Maihar and Amarpatan.
     </p>
 
     <a href="#booking" class="btn">BOOK YOUR EVENT</a>
+
   </section>
 
+  <!-- INSTRUMENTS -->
   <section class="section" id="instruments">
+
     <h2>Our Musical Instruments</h2>
+
     <p>Explore instruments available for booking.</p>
 
     <div class="cards">
@@ -99,6 +122,7 @@
     </div>
   </section>
 
+  <!-- SINGERS -->
   <section class="section singer-section" id="singers">
 
     <h2>Our Singers</h2>
@@ -109,10 +133,11 @@
 
     <div class="cards">
 
+      <!-- SOHAIL STAR -->
       <div class="card singer-card">
 
         <div class="singer-image">
-          <img src="sohail.png" alt="Sohail Star Male Singer">
+          <img src="sohail.png" alt="Sohail Star Male Singer in Rewa">
         </div>
 
         <h3>Sohail Star</h3>
@@ -125,17 +150,18 @@
 
       </div>
 
+      <!-- ARPITA STAR -->
       <div class="card singer-card">
 
         <div class="singer-image">
-          <div class="female-placeholder">🎙️</div>
+          <img src="female-singer.jpg" alt="Arpita Star Female Singer">
         </div>
 
-        <h3>Female Singer</h3>
+        <h3>Arpita Star</h3>
 
-        <p>Available for Booking</p>
+        <p>Female Singer</p>
 
-        <button type="button" onclick="bookItem('Female Singer')">
+        <button type="button" onclick="bookItem('Female Singer - Arpita Star')">
           Book Singer
         </button>
 
@@ -154,6 +180,7 @@
 
   </section>
 
+  <!-- BOOKING -->
   <section class="section booking-section" id="booking">
 
     <h2>Book Your Event</h2>
@@ -162,19 +189,9 @@
 
     <form id="bookingForm">
 
-      <input
-        type="text"
-        id="name"
-        placeholder="Your Full Name"
-        required
-      >
+      <input type="text" id="name" placeholder="Your Full Name" required>
 
-      <input
-        type="tel"
-        id="phone"
-        placeholder="Your Mobile Number"
-        required
-      >
+      <input type="tel" id="phone" placeholder="Your Mobile Number" required>
 
       <div class="selection-box">
 
@@ -228,8 +245,8 @@
           </label>
 
           <label>
-            <input type="checkbox" name="selection" value="Female Singer">
-            Female Singer
+            <input type="checkbox" name="selection" value="Female Singer - Arpita Star">
+            Female Singer - Arpita Star
           </label>
 
           <label>
@@ -251,10 +268,9 @@
         <option>Other</option>
       </select>
 
-      <!-- Event Date: Only one date field -->
+      <!-- EVENT DATE -->
       <div class="date-field">
 
-        <!-- Customer types date in DD-MM-YYYY format -->
         <input
           type="text"
           id="eventDate"
@@ -266,7 +282,6 @@
           required
         >
 
-        <!-- Calendar button -->
         <button
           type="button"
           id="datePickerButton"
@@ -275,7 +290,6 @@
           📅
         </button>
 
-        <!-- Hidden calendar input used by the calendar button -->
         <input
           type="date"
           id="hiddenDatePicker"
@@ -285,17 +299,9 @@
 
       </div>
 
-      <input
-        type="text"
-        id="location"
-        placeholder="Event Location"
-        required
-      >
+      <input type="text" id="location" placeholder="Event Location" required>
 
-      <textarea
-        id="message"
-        placeholder="Additional Details"
-      ></textarea>
+      <textarea id="message" placeholder="Additional Details"></textarea>
 
       <button type="submit">
         Send Booking Enquiry on WhatsApp
@@ -305,6 +311,7 @@
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
 
     <h3>STAR MUSICAL EVENTS</h3>
@@ -320,27 +327,25 @@
   </footer>
 
   <script src="script.js"></script>
-<style>
-  [data-netlify-badge],
-  .netlify-badge,
-  a[href*="netlify.com"] {
-    display: none !important;
-  }
-</style>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('a[href*="netlify.com"], [data-netlify-badge]')
-  .forEach(function(el) {
-    el.style.display = "none";
-  });
-});
-</script>
-<style>
-#netlify-badge,
-.netlify-badge,
-[data-netlify-badge] {
-    display: none !important;
-}
-</style>
+
+  <!-- NETLIFY BADGE CSS -->
+  <style>
+    [data-netlify-badge],
+    .netlify-badge,
+    #netlify-badge,
+    a[href*="netlify.com"] {
+      display: none !important;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('a[href*="netlify.com"], [data-netlify-badge]')
+        .forEach(function(el) {
+          el.style.display = "none";
+        });
+    });
+  </script>
+
 </body>
 </html>
